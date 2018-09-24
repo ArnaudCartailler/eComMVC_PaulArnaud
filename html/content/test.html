@@ -1,0 +1,39 @@
+
+<?php  $req = $pdo->query('SELECT * FROM articles');
+      $data = $req->fetchAll();
+
+?>
+<div class="container text-center";>
+<h1>Bonjour <?php if(isset($_SESSION['pseudo'])){ echo $_SESSION['pseudo']; } ?></h1>
+
+  <h2>PRODUITS</h2>
+  <!-- under: section article-->
+  <div class="row">
+
+
+      <?php
+      foreach($data as $key => $val){?>
+
+          <div class=" col-sm-12 col-md-3 col-lg-3 product">
+            <a href="products.php?index=<?php echo $key ?>">
+            <div class="row">
+            <img src="<?php echo $val['picture']; ?>" alt="product">
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p><?php  echo $val['name'] ?></p>
+              </div>
+              <div class="col-12">
+                <p><?php  echo $val['price'] ?> euros</p>
+              </div>
+            </div>
+            </a>
+          </div>
+      <?php }
+      ?>
+
+
+
+  </div>
+
+</div>
