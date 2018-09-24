@@ -1,0 +1,19 @@
+<div class="container text-center">
+
+    <h1><?= $products[$_GET['index']]['name'] ?></h1>
+
+    <img src="<?= $products[$_GET['index']]['picture'] ?>" alt="Photo du produit">
+
+    <p>
+        <?= $products[$_GET['index']]['price'] ?>
+    </p>
+
+    <p>
+        Description:<br>
+        <?= $products[$_GET['index']]['description'] ?><br>
+    </p>
+    <p>
+        Tailles disponibles:<br>
+        <?= $products[$_GET['index']]['size'] ?>
+    </p>
+</div>

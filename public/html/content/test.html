@@ -1,0 +1,45 @@
+
+
+
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+<div class="container text-center";>
+<h1>Bonjour <?php if(isset($_SESSION['pseudo'])){ echo $_SESSION['pseudo']; } ?></h1>
+
+  <h2>PRODUITS</h2>
+  <!-- under: section article-->
+  <div class="row">
+
+
+      <?php
+      foreach($products as $key => $product){?>
+          <div class=" col-sm-12 col-md-3 col-lg product">
+            <a href="products.php?index=<?= $key ?>">
+            <div class="row">
+            <img src="<?= $product['picture'] ?>">
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p><?= $product['name'] ?></p>
+              </div>
+              <div class="col-12">
+                <p><?= $product['price'] ?></p>
+              </div>
+            </div>
+            </a>
+          </div>
+      <?php }
+      ?>
+
+
+
+  </div>
+
+</div>
+
+
+
+
+
