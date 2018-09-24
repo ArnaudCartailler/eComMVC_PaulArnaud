@@ -1,9 +1,11 @@
 
 <h1>Bienvenue sur mon espace membre</h1>
+
 <?php if (isset($testRegist)){
             echo $testRegist;
       };
 ?>
+
 <form action="#" method="post">
     <p>Email</p>
     <input type="email" name="email" />

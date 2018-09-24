@@ -1,13 +1,13 @@
 <?php
 
-require 'global.php';
+require 'model/global.php';
 
-include 'html/boiler/startbp.html';
+include 'public/html/boiler/startbp.html';
 
-include 'html/content/menu.html';
+include 'public/html/content/menu.html';
 
-include 'html/content/test.html';
+include 'public/html/content/test.html';
 
-include 'html/content/footer.html';
+include 'public/html/content/footer.html';
 
-include 'html/boiler/endbp.html';
+include 'public/html/boiler/endbp.html';

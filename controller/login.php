@@ -1,15 +1,15 @@
 <?php
 
-require 'global.php';
+require 'model/global.php';
 
-include 'html/boiler/startbp.html';
+include 'public/html/boiler/startbp.html';
 
-include 'html/content/menu.html';
+include 'public/html/content/menu.html';
 
 if (isset($_POST['submit'])){
     $password = sha1($_POST['password']);
     $email = $_POST['email'];
-    
+
     if (empty($password) OR empty($email)) {
         echo 'Veuillez entrer un mot de passe et un id';
 
@@ -33,8 +33,8 @@ if (isset($_POST['submit'])){
     }
 }
 
-include 'html/content/login.html';
+include 'controller/login.php';
 
-include 'html/content/footer.html';
+include 'public/html/content/footer.html';
 
-include 'html/boiler/endbp.html';
+include 'public/html/boiler/endbp.html';

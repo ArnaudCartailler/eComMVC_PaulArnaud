@@ -1,5 +1,5 @@
 <?php
-require 'global.php';
+require 'model/global.php';
 
 if (isset($_POST['submit'])){
     echo 'submit: OK <br>';
@@ -56,4 +56,4 @@ if (isset($_POST['fdp'])){
     header('location: index.php');
 };
 
-include 'html/content/register.html';
+include 'controller/register.php';
