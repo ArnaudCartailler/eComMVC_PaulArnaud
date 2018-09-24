@@ -38,16 +38,20 @@ if (isset($_POST['submit'])){
                     echo 'Adresse non valide';
                 }
 
-            }else{
-                //METTRE UNE INSTRUCTION ICI
-            }
-
+    //         }else{
+    //             //METTRE UNE INSTRUCTION ICI
+    //         }
+    //
+    //     }
+    //
+    //
+    // }else{
+    //     //METTRE UNE INSTRUCTION ICI
         }
+      }
 
-
-    }else{
-        //METTRE UNE INSTRUCTION ICI
     }
+
 }
 
 

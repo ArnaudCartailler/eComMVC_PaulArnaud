@@ -14,4 +14,4 @@
     <button type="submit" name="submit">Connexion</button>
 </form>
 <h2>Inscription</h2>
-<a href="controller/register.php">S'inscrire</a>
+<a href="../public/html/content/register.html">S'inscrire</a>
